@@ -1,0 +1,6 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Fredriks Hemsida'
+theme = 'lugo'
+#params:
+ # EnableInstantClick: true

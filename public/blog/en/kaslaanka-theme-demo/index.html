@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<title>Kaslaanka Theme Demo | Fredriks Hemsida</title>
+	<link rel="canonical" href="http://localhost:1313/">
+	<link rel='alternate' type='application/rss+xml' title="Fredriks Hemsida RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.ico">
+	<meta name="description" content="Kaslaanka is a Bootstrap based minimalist theme for Hugo
+Typography Follows the Bootstrap based typography.
+h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading  This is bold text
+This is bold text
+This is italic text
+This is italic text
+Deleted text
+ Block quotes are written like so.
+They can span multiple paragraphs, if you like.
+ Some text, and some code and then a nice plain link with title.">
+	<meta name="keywords" content="HelloWorld, Demo, Markdown-Show">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+</head>
+<body>
+	<nav>
+    <ul>
+	<li><a href="/about/"><span class=pre></span><span class=menuname>About me</span></a>
+	</li>
+	<li><a class="menuactive" href="/blog/"><span class=pre></span><span class=menuname>Articles archive</span></a>
+	</li>
+	<li><a href="/contact/"><span class=pre></span><span class=menuname>Contact</span></a>
+	</li>
+		
+    </ul>
+</nav>
+<main>
+<header><h1 id="tag_Kaslaanka Theme Demo">Kaslaanka Theme Demo</h1></header>
+<article>
+
+<p><a href="https://github.com/M1cR0xf7/Kaslaanka">Kaslaanka</a> is a <del>Bootstrap</del> based minimalist theme for Hugo</p>
+<!-- raw HTML omitted -->
+<p><img src="https://images.unsplash.com/photo-1639077567163-f5bcf1c94d06" alt=""></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="typography">Typography</h2>
+<p>Follows the <del>Bootstrap</del> based typography.</p>
+<h1 id="h1-heading">h1 Heading</h1>
+<h2 id="h2-heading">h2 Heading</h2>
+<h3 id="h3-heading">h3 Heading</h3>
+<h4 id="h4-heading">h4 Heading</h4>
+<h5 id="h5-heading">h5 Heading</h5>
+<h6 id="h6-heading">h6 Heading</h6>
+<hr>
+<p><strong>This is bold text</strong></p>
+<p><strong>This is bold text</strong></p>
+<p><em>This is italic text</em></p>
+<p><em>This is italic text</em></p>
+<p><del>Deleted text</del></p>
+<blockquote>
+<p>Block quotes are
+written like so.</p>
+<p>They can span multiple paragraphs,
+if you like.</p>
+</blockquote>
+<p>Some text, and some <code>code</code> and then a nice plain <a href="/" title="title text!">link with title</a>.</p>
+<p>and then</p>
+<ul>
+<li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
+<li>Sub-lists are made by indenting 2 spaces:
+<ul>
+<li>Marker character change forces new list start:
+<ul>
+<li>Ac tristique libero volutpat at</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Very easy!</li>
+</ul>
+<p>vs.</p>
+<ol>
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+</ol>
+<h2 id="code">Code</h2>
+<p>Inline <code>code</code> example</p>
+<h3 id="python">Python</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">This is a pure Python implementation of the quick sort algorithm
+</span><span style="color:#e6db74">For doctests run following command:
+</span><span style="color:#e6db74">python -m doctest -v radix_sort.py
+</span><span style="color:#e6db74">or
+</span><span style="color:#e6db74">python3 -m doctest -v radix_sort.py
+</span><span style="color:#e6db74">For manual testing run:
+</span><span style="color:#e6db74">python radix_sort.py
+</span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+<span style="color:#f92672">from</span> __future__ <span style="color:#f92672">import</span> annotations
+
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">radix_sort</span>(list_of_ints: list[int]) <span style="color:#f92672">-&gt;</span> list[int]:
+    <span style="color:#e6db74">&#34;&#34;&#34;
+</span><span style="color:#e6db74">    Examples:
+</span><span style="color:#e6db74">    &gt;&gt;&gt; radix_sort([0, 5, 3, 2, 2])
+</span><span style="color:#e6db74">    [0, 2, 2, 3, 5]
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">    &gt;&gt;&gt; radix_sort(list(range(15))) == sorted(range(15))
+</span><span style="color:#e6db74">    True
+</span><span style="color:#e6db74">    &gt;&gt;&gt; radix_sort(list(range(14,-1,-1))) == sorted(range(15))
+</span><span style="color:#e6db74">    True
+</span><span style="color:#e6db74">    &gt;&gt;&gt; radix_sort([1,100,10,1000]) == sorted([1,100,10,1000])
+</span><span style="color:#e6db74">    True
+</span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+    RADIX <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>
+    placement <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    max_digit <span style="color:#f92672">=</span> max(list_of_ints)
+    <span style="color:#66d9ef">while</span> placement <span style="color:#f92672">&lt;=</span> max_digit:
+        <span style="color:#75715e"># declare and initialize empty buckets</span>
+        buckets: list[list] <span style="color:#f92672">=</span> [list() <span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> range(RADIX)]
+        <span style="color:#75715e"># split list_of_ints between the buckets</span>
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> list_of_ints:
+            tmp <span style="color:#f92672">=</span> int((i <span style="color:#f92672">/</span> placement) <span style="color:#f92672">%</span> RADIX)
+            buckets[tmp]<span style="color:#f92672">.</span>append(i)
+        <span style="color:#75715e"># put each buckets&#39; contents into list_of_ints</span>
+        a <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        <span style="color:#66d9ef">for</span> b <span style="color:#f92672">in</span> range(RADIX):
+            <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> buckets[b]:
+                list_of_ints[a] <span style="color:#f92672">=</span> i
+                a <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+        <span style="color:#75715e"># move to next</span>
+        placement <span style="color:#f92672">*=</span> RADIX
+    <span style="color:#66d9ef">return</span> list_of_ints
+
+
+<span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+    <span style="color:#f92672">import</span> doctest
+
+    doctest<span style="color:#f92672">.</span>testmod()
+</code></pre></div><h3 id="c-0xc0de">C 0xc0de!</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-C" data-lang="C"><span style="color:#75715e">// https://www.ioccc.org/2020/carlini/hint.text
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">#define N(a)       &#34;%&#34;#a&#34;$hhn&#34;
+</span><span style="color:#75715e">#define O(a,b)     &#34;%10$&#34;#a&#34;d&#34;N(b)
+</span><span style="color:#75715e">#define U          &#34;%10$.*37$d&#34;
+</span><span style="color:#75715e">#define G(a)       &#34;%&#34;#a&#34;$s&#34;
+</span><span style="color:#75715e">#define H(a,b)     G(a)G(b)
+</span><span style="color:#75715e">#define T(a)       a a
+</span><span style="color:#75715e">#define s(a)       T(a)T(a)
+</span><span style="color:#75715e">#define A(a)       s(a)T(a)a
+</span><span style="color:#75715e">#define n(a)       A(a)a
+</span><span style="color:#75715e">#define D(a)       n(a)A(a)
+</span><span style="color:#75715e">#define C(a)       D(a)a
+</span><span style="color:#75715e">#define R          C(C(N(12)G(12)))
+</span><span style="color:#75715e">#define o(a,b,c)   C(H(a,a))D(G(a))C(H(b,b)G(b))n(G(b))O(32,c)R
+</span><span style="color:#75715e">#define SS         O(78,55)R &#34;\n\033[2J\n%26$s&#34;;
+</span><span style="color:#75715e">#define E(a,b,c,d) H(a,b)G(c)O(253,11)R G(11)O(255,11)R H(11,d)N(d)O(253,35)R
+</span><span style="color:#75715e">#define S(a,b)     O(254,11)H(a,b)N(68)R G(68)O(255,68)N(12)H(12,68)G(67)N(67)
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">char</span><span style="color:#f92672">*</span> fmt <span style="color:#f92672">=</span> O(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">39</span>)N(<span style="color:#ae81ff">40</span>)N(<span style="color:#ae81ff">41</span>)N(<span style="color:#ae81ff">42</span>)N(<span style="color:#ae81ff">43</span>)N(<span style="color:#ae81ff">66</span>)N(<span style="color:#ae81ff">69</span>)N(<span style="color:#ae81ff">24</span>)O(<span style="color:#ae81ff">22</span>,<span style="color:#ae81ff">65</span>)O(<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">70</span>)O(<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">44</span>)N(
+            <span style="color:#ae81ff">45</span>)N(<span style="color:#ae81ff">46</span>)N    (<span style="color:#ae81ff">47</span>)N(<span style="color:#ae81ff">48</span>)N(    <span style="color:#ae81ff">49</span>)N( <span style="color:#ae81ff">50</span>)N(     <span style="color:#ae81ff">51</span>)N(<span style="color:#ae81ff">52</span>)N(<span style="color:#ae81ff">53</span>    )O( <span style="color:#ae81ff">28</span>,
+            <span style="color:#ae81ff">54</span>)O(<span style="color:#ae81ff">5</span>,        <span style="color:#ae81ff">55</span>) O(<span style="color:#ae81ff">2</span>,    <span style="color:#ae81ff">56</span>)O(<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">57</span>)O(      <span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">58</span> )O(<span style="color:#ae81ff">13</span>,    <span style="color:#ae81ff">73</span>)O(<span style="color:#ae81ff">4</span>,
+            <span style="color:#ae81ff">71</span> )N(   <span style="color:#ae81ff">72</span>)O   (<span style="color:#ae81ff">20</span>,<span style="color:#ae81ff">59</span>    )N(<span style="color:#ae81ff">60</span>)N(<span style="color:#ae81ff">61</span>)N(       <span style="color:#ae81ff">62</span>)N (<span style="color:#ae81ff">63</span>)N    (<span style="color:#ae81ff">64</span>)R R
+            E(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,   <span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">13</span>   )E(<span style="color:#ae81ff">4</span>,    <span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">13</span>)E(<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">9</span>        ,<span style="color:#ae81ff">13</span>)E(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">4</span>    ,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">13</span>)E
+            (<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">8</span>,        <span style="color:#ae81ff">13</span>)E(    <span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">13</span>)E(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">5</span>,         <span style="color:#ae81ff">9</span>,<span style="color:#ae81ff">13</span>)E(<span style="color:#ae81ff">3</span>    ,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">13</span>
+            )E(<span style="color:#ae81ff">14</span>,<span style="color:#ae81ff">15</span>,    <span style="color:#ae81ff">16</span>,<span style="color:#ae81ff">23</span>)    E(<span style="color:#ae81ff">17</span>,<span style="color:#ae81ff">18</span>,<span style="color:#ae81ff">19</span>,<span style="color:#ae81ff">23</span>)E(          <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">21</span>,    <span style="color:#ae81ff">22</span>,<span style="color:#ae81ff">23</span>)E
+            (<span style="color:#ae81ff">14</span>,<span style="color:#ae81ff">17</span>,<span style="color:#ae81ff">20</span>,<span style="color:#ae81ff">23</span>)E(<span style="color:#ae81ff">15</span>,    <span style="color:#ae81ff">18</span>,<span style="color:#ae81ff">21</span>,<span style="color:#ae81ff">23</span>)E(<span style="color:#ae81ff">16</span>,<span style="color:#ae81ff">19</span>,    <span style="color:#ae81ff">22</span>     ,<span style="color:#ae81ff">23</span>)E(    <span style="color:#ae81ff">14</span>, <span style="color:#ae81ff">18</span>,
+            <span style="color:#ae81ff">22</span>,<span style="color:#ae81ff">23</span>)E(<span style="color:#ae81ff">16</span>,<span style="color:#ae81ff">18</span>,<span style="color:#ae81ff">20</span>,    <span style="color:#ae81ff">23</span>)R U O(<span style="color:#ae81ff">255</span> ,<span style="color:#ae81ff">38</span>)R    G (     <span style="color:#ae81ff">38</span>)O(    <span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">36</span>)
+            R H(<span style="color:#ae81ff">13</span>,<span style="color:#ae81ff">23</span>)O(<span style="color:#ae81ff">255</span>,    <span style="color:#ae81ff">11</span>)R H(<span style="color:#ae81ff">11</span>,<span style="color:#ae81ff">36</span>) O(<span style="color:#ae81ff">254</span>    ,<span style="color:#ae81ff">36</span>)     R G(    <span style="color:#ae81ff">36</span> ) O(
+            <span style="color:#ae81ff">255</span>,<span style="color:#ae81ff">36</span>)R S(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">14</span>    )S(<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">15</span>)S(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">16</span>)S(<span style="color:#ae81ff">4</span>,    <span style="color:#ae81ff">17</span> )S     (<span style="color:#ae81ff">5</span>,    <span style="color:#ae81ff">18</span>)S(<span style="color:#ae81ff">6</span>,
+            <span style="color:#ae81ff">19</span>)S(<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">20</span>)S(<span style="color:#ae81ff">8</span>,    <span style="color:#ae81ff">21</span>)S(<span style="color:#ae81ff">9</span>    ,<span style="color:#ae81ff">22</span>)H(<span style="color:#ae81ff">13</span>,<span style="color:#ae81ff">23</span>    )H(<span style="color:#ae81ff">36</span>,     <span style="color:#ae81ff">67</span>    )N(<span style="color:#ae81ff">11</span>)R
+            G(<span style="color:#ae81ff">11</span>)<span style="color:#e6db74">&#34;&#34;</span>O(<span style="color:#ae81ff">255</span>,    <span style="color:#ae81ff">25</span> )R        s(C(G(<span style="color:#ae81ff">11</span>)    ))n (G(          <span style="color:#ae81ff">11</span>) )G(
+            <span style="color:#ae81ff">11</span>)N(<span style="color:#ae81ff">54</span>)R C(    <span style="color:#e6db74">&#34;aa&#34;</span>)   s(A(   G(<span style="color:#ae81ff">25</span>)))T    (G(<span style="color:#ae81ff">25</span>))N         (<span style="color:#ae81ff">69</span>)R o
+            (<span style="color:#ae81ff">14</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">26</span>)o(    <span style="color:#ae81ff">15</span>, <span style="color:#ae81ff">2</span>,   <span style="color:#ae81ff">27</span>)o   (<span style="color:#ae81ff">16</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">28</span>    )o( <span style="color:#ae81ff">17</span>,<span style="color:#ae81ff">4</span>,        <span style="color:#ae81ff">29</span>)o(<span style="color:#ae81ff">18</span>
+            ,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">30</span>)o(<span style="color:#ae81ff">19</span>    ,<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">31</span>)o(        <span style="color:#ae81ff">20</span>,<span style="color:#ae81ff">7</span>,<span style="color:#ae81ff">32</span>)o    (<span style="color:#ae81ff">21</span>,<span style="color:#ae81ff">8</span>,<span style="color:#ae81ff">33</span>)o       (<span style="color:#ae81ff">22</span> ,<span style="color:#ae81ff">9</span>,
+            <span style="color:#ae81ff">34</span>)n(C(U)    )N( <span style="color:#ae81ff">68</span>)R H(    <span style="color:#ae81ff">36</span>,<span style="color:#ae81ff">13</span>)G(<span style="color:#ae81ff">23</span>)    N(<span style="color:#ae81ff">11</span>)R C(D(      G(<span style="color:#ae81ff">11</span>)))
+            D(G(<span style="color:#ae81ff">11</span>))G(<span style="color:#ae81ff">68</span>)N(<span style="color:#ae81ff">68</span>)R G(<span style="color:#ae81ff">68</span>)O(<span style="color:#ae81ff">49</span>,<span style="color:#ae81ff">35</span>)R H(<span style="color:#ae81ff">13</span>,<span style="color:#ae81ff">23</span>)G(<span style="color:#ae81ff">67</span>)N(<span style="color:#ae81ff">11</span>)R C(H(<span style="color:#ae81ff">11</span>,<span style="color:#ae81ff">11</span>)G(
+            <span style="color:#ae81ff">11</span>))A(G(<span style="color:#ae81ff">11</span>))C(H(<span style="color:#ae81ff">36</span>,<span style="color:#ae81ff">36</span>)G(<span style="color:#ae81ff">36</span>))s(G(<span style="color:#ae81ff">36</span>))O(<span style="color:#ae81ff">32</span>,<span style="color:#ae81ff">58</span>)R C(D(G(<span style="color:#ae81ff">36</span>)))A(G(<span style="color:#ae81ff">36</span>))SS
+
+<span style="color:#75715e">#define arg d+6,d+8,d+10,d+12,d+14,d+16,d+18,d+20,d+22,0,d+46,d+52,d+48,d+24,d\
+</span><span style="color:#75715e">            +26,d+28,d+30,d+32,d+34,d+36,d+38,d+40,d+50,(scanf(d+126,d+4),d+(6\
+</span><span style="color:#75715e">            -2)+18*(1-d[2]%2)+d[4]*2),d,d+66,d+68,d+70, d+78,d+80,d+82,d+90,d+\
+</span><span style="color:#75715e">            92,d+94,d+97,d+54,d[2],d+2,d+71,d+77,d+83,d+89,d+95,d+72,d+73,d+74\
+</span><span style="color:#75715e">            ,d+75,d+76,d+84,d+85,d+86,d+87,d+88,d+100,d+101,d+96,d+102,d+99,d+\
+</span><span style="color:#75715e">            67,d+69,d+79,d+81,d+91,d+93,d+98,d+103,d+58,d+60,d+98,d+126,d+127,\
+</span><span style="color:#75715e">            d+128,d+129
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">char</span> d[<span style="color:#ae81ff">538</span>] <span style="color:#f92672">=</span> {<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">10</span>};
+
+<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#66d9ef">while</span>(<span style="color:#f92672">*</span>d) printf(fmt, arg);
+}
+</code></pre></div><p><code>&lt;pre&gt;</code> Hello World <code>&lt;/pre&gt;</code></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="buttons">Buttons</h2>
+<p><!-- raw HTML omitted -->Success<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->Danger<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->Warning<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->Info<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->Light<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->Dark<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->Success<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->Danger<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->Warning<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->Info<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->Light<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->Dark<!-- raw HTML omitted --></p>
+<h2 id="alerts">Alerts</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="tables">Tables</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><strong><!-- raw HTML omitted -->L<!-- raw HTML omitted -->orem ipsum</strong> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <em>magna aliqua</em>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>In modus congue feugait eos. In nec nonumy volutpat corrumpit, sea assentior quaerendum no, cum affert scripta ea. No nihil voluptaria pro. <a href="https://example.com">Erat democritum mei no</a>, homero quodsi aliquando id mel, ridens civibus molestiae et nam.</p>
+<p>Ea eam postea facilisi. Nullam forensibus consequuntur usu ea, no ius consul delectus periculis. Eam veri numquam an. Et partiendo gubergren eam. Quod iudicabit has ex, eam diam facilisi eu, elitr aliquip no eum.</p>
+
+
+</article>
+</main>
+
+<footer>
+	<a href="http://localhost:1313/">http://localhost:1313/</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<title>Read Me | Fredriks Hemsida</title>
+	<link rel="canonical" href="http://localhost:1313/">
+	<link rel='alternate' type='application/rss+xml' title="Fredriks Hemsida RSS" href='/index.xml'>
+	<link rel='stylesheet' type='text/css' href='/style.css'>
+	<link rel="icon" href="/favicon.ico">
+	<meta name="description" content="Kaslaanka A minimalist theme for Hugo. this theme is a fork of Hugo-tanka theme. this theme is a &ldquo;do it yourself&rdquo; theme, you probably want to change the css to make it your taste, use custom.css to do it.
+Live Demo at: m1cr0xf7.github.io/kaslaanka
+new features  remove the bloat (utterances comments, progressivly, highlight.js) scriptless by default. removed bootstrap. changed how the index, single pages and blog posts look. blog list on the home page is limited, if the users want to see more they go to /blog/ listing projects on the home page.">
+	<meta name="keywords" content="readme, Demo, Markdown-Show">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow">
+	<meta charset="utf-8">
+</head>
+<body>
+	<nav>
+    <ul>
+	<li><a href="/about/"><span class=pre></span><span class=menuname>About me</span></a>
+	</li>
+	<li><a class="menuactive" href="/blog/"><span class=pre></span><span class=menuname>Articles archive</span></a>
+	</li>
+	<li><a href="/contact/"><span class=pre></span><span class=menuname>Contact</span></a>
+	</li>
+		
+    </ul>
+</nav>
+<main>
+<header><h1 id="tag_Read me">Read me</h1></header>
+<article>
+
+<h1 id="kaslaanka">Kaslaanka</h1>
+<p>A minimalist theme for Hugo.
+this theme is a fork of <a href="https://github.com/nanxstats/hugo-tanka">Hugo-tanka</a> theme.
+this theme is a &ldquo;do it yourself&rdquo; theme, you probably want to change the css to make it your taste,
+use <code>custom.css</code> to do it.</p>
+<p><strong><strong>Live</strong></strong> Demo at: <a href="https://m1cr0xf7.github.io/kaslaanka/">m1cr0xf7.github.io/kaslaanka</a></p>
+<h2 id="new-features">new features</h2>
+<ul>
+<li>remove the bloat (utterances comments, progressivly, highlight.js)</li>
+<li>scriptless by default.</li>
+<li>removed bootstrap.</li>
+<li>changed how the index, single pages and blog posts look.</li>
+<li>blog list on the home page is limited, if the users want to see more they go to /blog/</li>
+<li>listing projects on the home page.</li>
+<li>brief about me on the home page.</li>
+<li>support unlisted articles.</li>
+<li>better favicons.</li>
+<li>better tags</li>
+<li>add multiple languages support</li>
+<li><strong>HUGE</strong> first letter paragraph (if you want)</li>
+<li>Brief description under blog post title</li>
+</ul>
+<h3 id="customcss">custom.css</h3>
+<p>add your custom css here <code>/static/css/custom.css</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* &lt;span class=&#34;first-letter&#34;&gt;H&lt;/span&gt;ello World! */</span>
+.<span style="color:#a6e22e">first-letter</span> {
+	<span style="color:#66d9ef">font-family</span>: <span style="color:#e6db74">&#34;Roboto Serif&#34;</span>;
+}
+</code></pre></div><h3 id="customjs">custom.js</h3>
+<p>add your custom javascript here <code>/static/js/custom.js</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// be creative
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">for</span>(;;){<span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;HAHAHAHAHAH&#34;</span>)}
+</code></pre></div><h3 id="external-scripts">external scripts</h3>
+<p>you can add external scripts in <code>/layouts/partials/scripts.html</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;...&#34;</span> <span style="color:#960050;background-color:#1e0010">...</span> &gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><h3 id="meta--link-tags">meta &amp; link tags</h3>
+<p>you can add as much <code>&lt;meta&gt;</code> and <code>&lt;link&gt;</code> as you like in <code>/layouts/partials/meta.html</code></p>
+<h3 id="tags">tags</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml"><span style="color:#f92672">tags</span>:
+  - <span style="color:#ae81ff">hello</span>
+  - <span style="color:#ae81ff">ok</span>
+</code></pre></div><p>this post will be listed at /tags/hello/ and /tags/ok/</p>
+<h3 id="configyml">config.yml</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">
+<span style="color:#f92672">sitename</span>: <span style="color:#e6db74">&#34;Site Name!&#34;</span>
+
+<span style="color:#75715e"># Links of the navbar</span>
+<span style="color:#f92672">menu</span>:
+  <span style="color:#f92672">primary</span>:
+    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Home</span>
+      <span style="color:#f92672">url</span>: <span style="color:#ae81ff">/</span>
+      <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">1</span>
+    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">About me</span>
+      <span style="color:#f92672">url</span>: <span style="color:#ae81ff">/aboutme</span>
+      <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">2</span>
+    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">Subscribe</span>
+      <span style="color:#f92672">url</span>: <span style="color:#ae81ff">/index.xml</span>
+      <span style="color:#f92672">weight</span>: <span style="color:#ae81ff">3</span>
+
+<span style="color:#75715e"># You can add languages!</span>
+<span style="color:#75715e"># First do some reading</span>
+<span style="color:#75715e"># https://gohugo.io/content-management/multilingual/</span>
+<span style="color:#f92672">languages</span>:
+  <span style="color:#f92672">en</span>:
+    <span style="color:#f92672">LanguageName</span>: <span style="color:#ae81ff">English</span>
+  <span style="color:#f92672">ru</span>:
+    <span style="color:#f92672">LanguageName</span>: <span style="color:#ae81ff">русский</span>
+    <span style="color:#f92672">contentDir</span>: <span style="color:#ae81ff">content/ru</span>
+
+<span style="color:#f92672">params</span>:
+
+  <span style="color:#75715e"># it will produce: copyrights (c) 2022 joe</span>
+  <span style="color:#f92672">copyrights</span>: <span style="color:#ae81ff">joe</span>
+  <span style="color:#75715e"># path to the favicon directory</span>
+  <span style="color:#75715e"># see ./layouts/_defaults/baseof.html line #30 to line #37</span>
+  <span style="color:#f92672">faviconpath</span>: <span style="color:#e6db74">&#34;/img/favicon&#34;</span>
+  <span style="color:#75715e"># projects will show in the index page</span>
+  <span style="color:#f92672">myprojects</span>:
+    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">AAAAA</span>
+      <span style="color:#f92672">description</span>: <span style="color:#ae81ff">BBBBBBB</span>
+      <span style="color:#f92672">url</span>: <span style="color:#ae81ff">https://example.com</span>
+    - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">XXXXXXXXXXXXXXX</span>
+      <span style="color:#f92672">description</span>: <span style="color:#ae81ff">YYYYYYYYYYYYYYYYYYY</span>
+      <span style="color:#f92672">url</span>: <span style="color:#ae81ff">https://example.com</span>
+  <span style="color:#75715e"># link to more projects</span>
+  <span style="color:#75715e"># show your github repositories as example</span>
+  <span style="color:#75715e"># or create your own page.</span>
+  <span style="color:#f92672">projectsURL</span>: <span style="color:#ae81ff">https://github.com/&lt;username&gt;?tab=repositories</span>
+
+  <span style="color:#75715e"># a brief about me</span>
+  <span style="color:#f92672">brief_about</span>: <span style="color:#ae81ff">hello there, its me &lt;i&gt;joe&lt;i&gt;.</span>
+
+<span style="color:#75715e"># and don&#39;t forget</span>
+<span style="color:#f92672">theme</span>: <span style="color:#ae81ff">kaslaanka</span>
+</code></pre></div><h3 id="posts">posts</h3>
+<p>you can make a post unlisted by adding the following</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+
+<span style="color:#f92672">unlisted</span>: <span style="color:#66d9ef">true</span>
+
+---
+</code></pre></div><p>add a brief description to a single blog page.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+
+<span style="color:#f92672">brief</span>: <span style="color:#e6db74">&#34;This is my demo brief!&#34;</span>
+
+---
+</code></pre></div><h3 id="license">LICENSE</h3>
+<p>GPL-3.0 <a href="./LICENSE">LICENSE</a>.</p>
+
+
+</article>
+</main>
+
+<footer>
+	<a href="http://localhost:1313/">http://localhost:1313/</a>
+</footer>
+
+</body>
+</html>
